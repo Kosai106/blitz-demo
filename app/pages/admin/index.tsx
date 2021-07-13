@@ -18,10 +18,6 @@ const AdminPage: BlitzPage = () => {
 }
 
 AdminPage.suppressFirstRenderFlicker = true
-AdminPage.getLayout = (page) => (
-  <Suspense fallback="Loading...">
-    <Layout title="Admin">{page}</Layout>
-  </Suspense>
-)
+AdminPage.getLayout = (page) => <Layout title="Admin">{page}</Layout>
 
 export default AdminPage
